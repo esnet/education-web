@@ -1,0 +1,104 @@
+
+  
+/* USE <link rel="stylesheet" href="navbar.css">
+ */
+
+
+ul {
+  font-family: "Share", sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: -2%;
+
+}
+
+li {
+  float: right;
+  margin-right: 8%;
+}
+
+li a {
+  display: block;
+  color: rgb(48, 48, 48);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: rgb(78, 193, 224);
+}
+
+.active {
+
+}
+
+#navLine {
+width: 90%;
+float: right;
+height: 1px;
+background-color: black;
+}
+
+
+/* DROPDOWN CSS
+ */
+
+/* Dropdown content */
+ul.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+ul.menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+ul.menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+ul.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Show the dropdown button's background color when the dropdown content is shown */
+ul.menu .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+/* BOTTOM MENU CSS */
+
+.contain {
+  display: flex;
+}    
+
+.container {
+  display: flex;
+}
+.menu{
+padding-top: 10%;
+}
+
+.bottommenu{
+  max-width: 30%;
+  float: right;
+  padding-top: 3%;
+  text-align: center;
+}
