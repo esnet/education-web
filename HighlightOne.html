@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <title>Home</title>
+    <title>Career Highlights</title>
 </head>
 
 <!-- NAVBAR CSS -->
@@ -16,6 +17,98 @@
     @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
 </style>
 
+<!-- STYLES -->
+
+    <style>
+
+        .highlight-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+            margin-left: 20%;
+            margin-top: 5%;
+
+        }
+
+        .highlight-item .rectangle {
+            position: absolute;
+            top: 50%;
+            left: 230%;
+            width: 1000px;
+            height: 300px;
+            background-color: black;
+            background-size: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .highlight-item a{
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            background-color: grey;
+            z-index: 1;
+            border: 40px solid white;
+        }
+
+        .headshot {
+            border-radius: 50%;
+        }
+
+        h4 p{
+            display: inline;
+            color: black;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        h5{
+            font-family: "Spline Sans", sans-serif;
+            margin-left: 85%;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        h4{
+            font-family: "Spline Sans", sans-serif;
+            color: #FF4E00;
+            text-align: left;
+            max-width: 1050px;
+            margin-left: 20%;
+            font-size: 19px;
+            
+        }
+
+        .blue {
+            color: #003A5D;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu{
+            margin-top: -12%;
+        }
+
+        .bottommenu{
+            margin-top: 1%;
+            font-size: 15px;
+        }
+
+        .interview {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+
+
+
 <!-- NAVIGATION -->
     <header>
         <img src="img/EsNetLogo.png" width="400px" class="logo">
@@ -26,12 +119,11 @@
 
 
             <li class="dropdown">
-            <a href="EducationalResources.html" class="dropbtn">EDUCATIONAL RESOURCES</a>
+            <a href="#" class="dropbtn">EDUCATIONAL RESOURCES</a>
             <div class="dropdown-content">
                 <a href="FAQ.html">FAQ</a>
                 <a href="Video.html">Video Content</a>
                 <a href="Guidance.html">Guidance</a>
-                <a href="Networking.html">Networking</a>
             </div>
         </li>
 
@@ -45,9 +137,23 @@
 
      </ul>
     </header>
+     <div class="highlight-item">
+        <div class="rectangle"></div>
+        <a class="headshot" href="HighlightOne.html">  <img class="headshot" src="img/sowmya-headshot.png" width="260" alt="Highlight 1"> </a> 
+     </div>
+<body>
+    <h5>Month Day, Year</h5>
+    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+    <h4 class="blue">INTERVIEWEE: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse  faucibus in. Est velit egestas dui id </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id</p></h4>
+    <h4 class="blue">INTERVIEWEE: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+    <h4 class="blue">INTERVIEWEE: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+</body>
 
-</html>
 
+<!--bottom-->
 <hr style="height: 1px; background-color: black;">
 <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
 <img src="img/DOElogo.png" width="400px" style="padding: 50px;">
@@ -56,14 +162,16 @@
 
          <li><a href="Contact.html">CONTACT</a></li>
 
-        <li><a href="MailingList.html">MAILING LIST</a></li>
+         <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
 
         <li><a class="active" href="Community.html">COMMUNITY</a></li>
 
-        <li><a href="EducationalResources.html">EDUCATIONAL RESOURCES</a></li>
+        <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
         <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
 
         <li><a href="index.html">HOME</a></li>
 
  </ul>
+
+</html>

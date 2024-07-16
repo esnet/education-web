@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <title>Home</title>
+    <title>Community</title>
 </head>
     
 <!-- NAVBAR CSS -->
@@ -14,6 +14,58 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
+    h1 {
+        color: #FF4E00;
+        font-family: 'Spline Sans', sans-serif;
+        font-size: 60px;
+        text-align: center;
+    }
+    .container{
+        padding: bottom; 4%;
+    }
+
+    .feedback {
+        background-color: #003A5D;  
+        padding-bottom:4%;
+    }
+
+
+    .feedbackTitle {
+        padding-top: 4%;
+        color: #D2E9EE;
+    }
+
+    .calenderTitle {
+        color: #D2E9EE;
+        padding-top: 4%;
+    }
+
+    .calender {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        border-radius: 30px;
+        padding: 1%;
+    }
+    
+    .form{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        border-radius: 30px;
+    }
+
+    .post{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5%;
+        background-color: #C9CACC;
+        border-radius: 30px;
+    }
+    
 </style>
 
 <!-- NAVIGATION -->
@@ -25,12 +77,11 @@
 
 
          <li class="dropdown">
-            <a href="EducationalResources.html" class="dropbtn">EDUCATIONAL RESOURCES</a>
+            <a href="#" class="dropbtn">EDUCATIONAL RESOURCES</a>
             <div class="dropdown-content">
                 <a href="FAQ.html">FAQ</a>
                 <a href="Video.html">Video Content</a>
                 <a href="Guidance.html">Guidance</a>
-                <a href="Networking.html">Networking</a>
             </div>
         </li>
 
@@ -43,7 +94,25 @@
      </ul>
     </header>
 
-</html>
+    <body>
+        <!-- Calender -->
+        <div class="feedback">
+        <h1 class="calenderTitle">UPCOMING EVENTS</h1>
+        <iframe class="calender" src="https://calendar.google.com/calendar/embed?src=c_4df637999c797e8581276ebef4b4faeed013525092e6899f2a9b96972fee3c90%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        <!-- Social media links -->
+        <h1>LATEST EVENTS</h1>
+        <div class="container">
+        <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7186099293479428096" height="572" width="450" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7215053836212690944" height="572" width="450" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        <iframe class= "post" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7215023884973002752" height="572" width="450" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+    <div class="feedback">
+        <!--Google form -->
+        <h1 class="feedbackTitle">GIVE US FEEDBACK</h1>
+        <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSen2CrsixgbSlDNEO-CNicn_F_DgKGX3hC3xjOiIHvJlsMIGw/viewform?embedded=true" width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </body>
 
 <hr style="height: 1px; background-color: black;">
 <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
@@ -57,10 +126,11 @@
 
         <li><a class="active" href="Community.html">COMMUNITY</a></li>
 
-        <li><a href="EducationalResources.html">EDUCATIONAL RESOURCES</a></li>
+        <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
         <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
 
         <li><a href="index.html">HOME</a></li>
 
  </ul>
+    </html>

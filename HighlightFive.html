@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <title>Home</title>
+    <title>Career Highlights</title>
 </head>
 
 <!-- NAVBAR CSS -->
@@ -16,6 +16,48 @@
     @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
 </style>
 
+<!-- STYLES -->
+
+    <style>
+
+        .highlight-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+            margin-left: 20%;
+            margin-top: 5%;
+
+        }
+
+        .highlight-item .rectangle {
+            position: absolute;
+            top: 50%;
+            left: 230%;
+            width: 1000px;
+            height: 300px;
+            background-color: black;
+            background-size: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .highlight-item a{
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            background-color: grey;
+            z-index: 1;
+            border: 40px solid white;
+        }
+
+    </style>
+
+
+
 <!-- NAVIGATION -->
     <header>
         <img src="img/EsNetLogo.png" width="400px" class="logo">
@@ -26,12 +68,11 @@
 
 
             <li class="dropdown">
-            <a href="EducationalResources.html" class="dropbtn">EDUCATIONAL RESOURCES</a>
+            <a href="#" class="dropbtn">EDUCATIONAL RESOURCES</a>
             <div class="dropdown-content">
                 <a href="FAQ.html">FAQ</a>
                 <a href="Video.html">Video Content</a>
                 <a href="Guidance.html">Guidance</a>
-                <a href="Networking.html">Networking</a>
             </div>
         </li>
 
@@ -45,8 +86,10 @@
 
      </ul>
     </header>
-
-</html>
+     <div class="highlight-item">
+        <div class="rectangle"></div>
+        <a class="headshot" href="HighlightOne.html">  <img  src="img/highlight1.jpg" alt="Highlight 1"> </a> 
+     </div>
 
 <hr style="height: 1px; background-color: black;">
 <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
@@ -56,14 +99,16 @@
 
          <li><a href="Contact.html">CONTACT</a></li>
 
-        <li><a href="MailingList.html">MAILING LIST</a></li>
+         <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
 
         <li><a class="active" href="Community.html">COMMUNITY</a></li>
 
-        <li><a href="EducationalResources.html">EDUCATIONAL RESOURCES</a></li>
+        <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
         <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
 
         <li><a href="index.html">HOME</a></li>
 
  </ul>
+
+</html>

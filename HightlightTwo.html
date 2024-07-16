@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <title>Home</title>
+    <title>Career Highlights</title>
 </head>
 
 <!-- NAVBAR CSS -->
@@ -16,9 +16,75 @@
     @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
 </style>
 
+<!-- STYLES -->
+
+    <style>
+
+        .highlight-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+            margin-left: 20%;
+            margin-top: 5%;
+
+        }
+
+        .highlight-item .rectangle {
+            position: absolute;
+            top: 50%;
+            left: 230%;
+            width: 1000px;
+            height: 300px;
+            background-color: black;
+            background-size: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .highlight-item a{
+            width: 260px;
+            height: 269px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            background-color: grey;
+            z-index: 1;
+            border: 40px solid white;
+        }
+        .shifted {
+            position: relative;
+            left: 1300px;
+        }
+        .interviewer {
+            color: #FF4E00;
+        }
+        .interviewee {
+            color: #003A5D; 
+        }
+        .fixed-width {
+            position: relative;
+            left: 400px;
+            max-width:1000px; 
+            font-size: 25px;
+        }
+       .backarrow {
+           width: 50px;
+       }
+
+        p{
+            font-size: 20px;
+        }
+    </style>
+
+<!--Back button--> 
+     <a href="CareerHighlights.html">  <img class= "backarrow" src="img/back arrow.webp" alt="Go back" </a> 
+
+
 <!-- NAVIGATION -->
     <header>
-        <img src="img/EsNetLogo.png" width="400px" class="logo">
+        <img src="img/EsNetLogo.png" width="400" class="logo">
 
     <ul class="menu">
             <li><a class="active" href="Community.html">COMMUNITY</a></li>
@@ -26,12 +92,11 @@
 
 
             <li class="dropdown">
-            <a href="EducationalResources.html" class="dropbtn">EDUCATIONAL RESOURCES</a>
+            <a href="#" class="dropbtn">EDUCATIONAL RESOURCES</a>
             <div class="dropdown-content">
                 <a href="FAQ.html">FAQ</a>
                 <a href="Video.html">Video Content</a>
                 <a href="Guidance.html">Guidance</a>
-                <a href="Networking.html">Networking</a>
             </div>
         </li>
 
@@ -43,10 +108,28 @@
 
         <hr id="navLine">
 
-     </ul>
+     </ul> 
     </header>
 
-</html>
+     <div class="highlight-item">
+        <div class="rectangle"></div>
+        <a class="headshot" href="HighlightOne.html">  <img  src="img/highlight1" alt="Highlight 1"> </a> 
+     </div>
+
+    <!--date-->
+    <p class="shifted"> Month Day, Year</p>
+    <br>
+    <!--main transcription--> 
+
+    <div class = "fixed-width">
+    <p><span class= "interviewer"> <strong>INTERVIEWER:</strong> </span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p> 
+    <p><span class= "interviewee"><strong>INTERVIEWEE:</strong></span> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p>
+        <p><span class= "interviewer"> <strong>INTERVIEWER:</strong> </span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p> 
+        <p><span class= "interviewee"><strong>INTERVIEWEE:</strong></span> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p>
+        <p><span class= "interviewer"> <strong>INTERVIEWER:</strong> </span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p> 
+        <p><span class= "interviewee"><strong>INTERVIEWEE:</strong></span> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p>
+          <p><span class= "interviewer"> <strong>INTERVIEWER:</strong> </span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p> 
+    </div>
 
 <hr style="height: 1px; background-color: black;">
 <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
@@ -56,14 +139,16 @@
 
          <li><a href="Contact.html">CONTACT</a></li>
 
-        <li><a href="MailingList.html">MAILING LIST</a></li>
+       <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
 
-        <li><a class="active" href="Community.html">COMMUNITY</a></li>
+        <li><a href="Community.html">COMMUNITY</a></li>
 
-        <li><a href="EducationalResources.html">EDUCATIONAL RESOURCES</a></li>
+        <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
         <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
 
         <li><a href="index.html">HOME</a></li>
 
  </ul>
+
+</html>

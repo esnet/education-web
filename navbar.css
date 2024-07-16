@@ -3,6 +3,31 @@
 /* USE <link rel="stylesheet" href="navbar.css">
  */
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* grey */
+  background: rgb(109, 110, 113); 
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+       /* light blue */
+  background:  rgb(78, 193, 224);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+     /* orange */
+  background: rgb(255, 78, 0);
+}
+
 
 ul {
   font-family: "Share", sans-serif;

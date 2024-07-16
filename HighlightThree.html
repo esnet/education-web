@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <title>Home</title>
+    <title>Career Highlights</title>
 </head>
 
 <!-- NAVBAR CSS -->
@@ -16,6 +16,99 @@
     @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
 </style>
 
+<!-- STYLES -->
+
+    <style>
+
+        .highlight-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+            margin-left: 20%;
+            margin-top: 5%;
+
+        }
+
+        .highlight-item .rectangle {
+            position: absolute;
+            top: 50%;
+            left: 230%;
+            width: 1000px;
+            height: 300px;
+            background-color: black;
+            background-size: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .highlight-item a{
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            background-color: grey;
+            z-index: 1;
+            border: 40px solid white;
+        }
+
+        .headshot {
+            border-radius: 50%;
+        }
+
+        h4 p{
+            display: inline;
+            color: black;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        h5{
+            display: relative;
+            font-family: "Spline Sans", sans-serif;
+            margin-left: 85%;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        h4{
+            font-family: "Spline Sans", sans-serif;
+            color: #FF4E00;
+            text-align: left;
+            max-width: 1050px;
+            margin-left: 20%;
+            font-size: 19px;
+            
+        }
+
+        .blue {
+            color: #003A5D;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu{
+            margin-top: -12%;
+        }
+
+        .bottommenu{
+            margin-top: 1%;
+            font-size: 15px;
+        }
+
+        .interview {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+
+
+
 <!-- NAVIGATION -->
     <header>
         <img src="img/EsNetLogo.png" width="400px" class="logo">
@@ -26,12 +119,11 @@
 
 
             <li class="dropdown">
-            <a href="EducationalResources.html" class="dropbtn">EDUCATIONAL RESOURCES</a>
+            <a href="#" class="dropbtn">EDUCATIONAL RESOURCES</a>
             <div class="dropdown-content">
                 <a href="FAQ.html">FAQ</a>
                 <a href="Video.html">Video Content</a>
                 <a href="Guidance.html">Guidance</a>
-                <a href="Networking.html">Networking</a>
             </div>
         </li>
 
@@ -45,9 +137,26 @@
 
      </ul>
     </header>
+     <div class="highlight-item">
+        <div class="rectangle"></div>
+        <a class="headshot" href="HighlightOne.html">  <img class="headshot" src="img/sowmya-headshot.png" width="260" alt="Highlight 1"> </a> 
+     </div>
+<body>
+    <h5>Month Day, Year</h5>
+    <h4 class="interview">INTERVIEWER: <p>Can you tell us a little bit about what you do?</p></h4>
+    <h4 class="blue">SOWMYA: <p>I'm actually a software engineer, and, I'm part of the measurement and analysis, team here at ESnet. And what we do specifically is we collect, network telemetry data. So we have a big, collection system. We support analysis and also visualization. But, specifically, what my role is is I actually, help with the, platform side of things, so I take care of the storage aspect. So all this data needs to be stored somewhere and we have about, slightly more than 100 terabytes of data. We also have a bunch of data processing pipelines, clusters for all that. So most of that work is done in Google Cloud. And in recent months, I've also started looking into, how we can leverage machine learning and AI, especially from a operations cons context.
+</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What was your path to ESnet like?</p></h4>
+    <h4 class="blue">SOWMYA: <p>So I've been at ESnet for this is, I think, my 14th year. So I've been here for a while. I joined ESnet as a summer intern, in 2009, so it was way back. I had done my bachelor's in, India in electronics and communication and, during those 4 years, I realized my passion was more in the communication side, and, I wanted to specialize. So that's why I came here for my master's program. So I was doing my master's at, Carnegie Mellon, and when I was looking for internships it was really an accident, like, how I stumbled across ESnet. Like, I'd not heard of ESnet at all, not even the lab. The entire d DOE complex was completely new to me. So there was a position open, and I applied for it. I think it was a joint position between the computational research division as well as ESnet. That's basically how I made my way into ESnet. I was given the task of, developing the prototype for the network, and visualization map, using Google Maps API and stuff. So I worked on the very, very first version. And, what was supposed to be a prototype ended up being a demo, and, eventually, it ended up being part of the DOE program manager's wall and all that. Then eventually, I found myself and enjoyed my, time here, like, you know, the 3 months that I spent, working on that, network visualization map.
 
-</html>
+ </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+    <h4 class="blue">INTERVIEWEE: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+</body>
 
+
+<!--bottom-->
 <hr style="height: 1px; background-color: black;">
 <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
 <img src="img/DOElogo.png" width="400px" style="padding: 50px;">
@@ -56,14 +165,16 @@
 
          <li><a href="Contact.html">CONTACT</a></li>
 
-        <li><a href="MailingList.html">MAILING LIST</a></li>
+         <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
 
         <li><a class="active" href="Community.html">COMMUNITY</a></li>
 
-        <li><a href="EducationalResources.html">EDUCATIONAL RESOURCES</a></li>
+        <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
         <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
 
         <li><a href="index.html">HOME</a></li>
 
  </ul>
+
+</html>
