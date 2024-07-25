@@ -8,12 +8,11 @@
     <title>Home</title>
 </head>
 
-    <!-- NAVBAR CSS -->
-     <link rel="stylesheet" href="navbar.css">
+<!-- NAVBAR CSS -->
+<link rel="stylesheet" href="navbar.css">
 
 <!-- FONTS -->
 <style>
-    
     @import url('https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
 
@@ -26,7 +25,6 @@
     ::-webkit-scrollbar-track {
         /* grey */
       background: rgb(109, 110, 113); 
-        
     }
 
     /* Handle */
@@ -41,15 +39,11 @@
          /* orange */
       background: rgb(255, 78, 0);
     }
-
 </style>
 
 <!-- STYLING -->
 <style>
-
-    
-
-    ul {
+ul {
   font-family: "Share", sans-serif;
   list-style-type: none;
   margin: 0;
@@ -57,175 +51,208 @@
   overflow: hidden;
   font-weight: 600;
   font-style: normal;
-
 }
 
 li {
   margin-right: 10%;
 }
 
-
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   color: rgb(78, 193, 224);
 }
 
-.active {
-
-}
+.active {}
 
 #navLine {
-width: 90%;
-float: right;
-height: 1px;
-background-color: black;
+    width: 90%;
+    float: right;
+    height: 1px;
+    background-color: black;
+}
+
+#BackdropContainer {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 #Backdrop {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+#BackdropTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Spline Sans", sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
     width: 100%;
     
 }
-    
-.logo{
-      float: left;
 
+.logo {
+    float: left;
 }
 
-.mission{
-    margin-left: 8%;
-    font-family: "Spline Sans", sans-serif;
-    max-width: 760px;
-}
-
-#missionImage {
-    margin-left: 35%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-#secondMissionImage {
-    padding-left:12%;
-    margin-bottom: 10%;
-}
-
-.extra{
-    font-family: "Spline Sans", sans-serif;
-    /* border: 1px solid red; */
-}
 
 h2 {
     font-family: "Spline Sans", sans-serif;
-    margin-left: 8%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    margin-left: 5%;
+    margin-bottom: -2%;
+     margin-top: 5%;
+    font-size: 30px;
+}
+h3 {
+    font-family: "Spline Sans", sans-serif;
+    margin-left: 5%;
+    margin-bottom: -6%;
+     margin-top: 5%;
+    font-size: 30px;
+
+}
+.menu {
+    padding-top: 5%;
 }
 
-.contain {
-    display: flex;
-}    
-
-.container {
-    display: flex;
-}
-.menu{
-padding-top: 5%;
-}
-
-.bottommenu{
+.bottommenu {
     max-width: 30%;
     float: right;
     padding-top: 3%;
     text-align: center;
 }
 
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .text {
+        flex: 1;
+        padding-left: 5%;
+          padding-right: 5%;
+         font-family: "Spline Sans", sans-serif;
+        font-size: 20px;
+        max-width:40%;
+    }
+
+    .image {
+        flex: 1;
+        padding-left: 5%;
+           padding-right: 5%;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .shiftRight{
+        position relative; 
+        margin-left: 55%;
+    }
+
+    .animate-charcter
+    {
+       text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #FFFFFF 0%,
+        #D2E9EE 29%,
+        #b9e2eb 67%,
+        #c2f2fc 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+          font-size: 190px;
+    }
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+    
 </style>
 
-
 <body>
-
 <!-- NAVIGATION BAR -->
-    
 <header>
     <img src="img/EsNetLogo.png" width="400px" class="logo">
 
-<ul class="menu">
+    <ul class="menu">
         <li><a class="active" href="Community.html">COMMUNITY</a></li>
-
-
-
         <li class="dropdown">
-        <a href="#" class="dropbtn">EDUCATIONAL RESOURCES</a>
-        <div class="dropdown-content">
-            <a href="FAQ.html">FAQ</a>
-            <a href="Video.html">Video Content</a>
-            <a href="Guidance.html">Guidance</a>
-        </div>
-    </li>
-
-
-    
-        <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
-
+            <a href="#" class="dropbtn">EDUCATIONAL RESOURCES</a>
+            <div class="dropdown-content">
+                <a href="FAQ.html">FAQ</a>
+                <a href="Video.html">Video Content</a>
+                <a href="Guidance.html">Guidance</a>
+            </div>
+        </li>
+        <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
         <li><a href="index.html">HOME</a></li>
-  
-    <hr id="navLine">
-
- </ul>
+        <hr id="navLine">
+    </ul>
 </header>
 
 <!-- BACKDROP -->
-    <img id="Backdrop" src="img/ESnet_map.png" width="1450px">
+<div id="BackdropContainer">
+    <img id="Backdrop" src="img/shynwang.jpeg" width="1450px">
+    <div id="BackdropTitle" class="animate-charcter">ESNET K-12 EDUCATION</div>
+</div>  
 
-</body>
-
-<!--Mission Statement -->
+<!-- Mission Statement -->
 <main>
-    <div class="contain"> 
-        <div>
-            <h2 class="OurMission">Our Mission</h2>
-            <p class="mission">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div>
-            <img id="missionImage" src="img/homepage1.png" width=467px>
-        </div>
-    </div>
+    <h2 class="OurMission" style="color: rgb(255, 78, 0);">Our Mission</h2>
     <div class="container">
-        <div>
-            <img id="secondMissionImage" src="img/homePageImage2.png" width=467px>
+        <div class="row">
+            <div class="text">We've established this resource hub to ignite a passion for STEM among students. By engaging underrepresented communities early in their educational journey, we're not just aiming to diversify our applicant pool, but to inspire a generation to see themselves thriving in careers at pioneering institutions like ESnet and LBNL. Through initiatives such as the K-12 Education and Outreach team at Berkeley Lab, we are actively forging pathways that lead to inclusive opportunities and transformative change. This team works directly with local schools, providing hands-on experiences and mentorship to cultivate the next generation of diverse STEM leaders, ensuring a vibrant future for science and innovation. Together, ESnet is working with the K-12 team to build a community where every student has the opportunity to envision themselves contributing to groundbreaking research and advancements in science and technology.</div>
+            <div class="image"><img src="img/homePageImage2.png" alt="Image 1"></div>
         </div>
-        <div>
-            <p class="extra", style="text-align: left; margin-left: 35%;max-width: 60%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <h3 class= shiftRight style="color: rgb(255, 78, 0);">More About Us</h3>
+        <div class="row reverse">
+            <div class="text">ESnet is a high-speed network operated by the Department of Energy's Office of Science. It ensures reliable data transport for large-scale scientific research across the country. Managed by Lawrence Berkeley National Laboratory, ESnet aims to remove barriers to scientific progress, allowing researchers to collaborate seamlessly regardless of their location. By offering advanced networking systems and services, ESnet supports scientists in tackling critical global challenges through integrated research infrastructure.</div>
+            <div class="image"><img src="img/homepage1.png" alt="Image 2"></div>
         </div>
     </div>
 </main>
 
-
-
-    <!--Bottom -->
+<!-- Bottom -->
 <hr style="height: 1px; background-color: black;">
-    <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
-    <img src="img/DOElogo.png" width="400px" style="padding: 50px;">
-    
-    <ul class="bottommenu">
-        
-             <li><a href="Contact.html">CONTACT</a></li>
-       
-            <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
+<img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
+<img src="img/DOElogo.png" width="400px" style="padding: 50px;">
 
-            <li><a class="active" href="Community.html">COMMUNITY</a></li>
-
-            <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
-
-            <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
-
-            <li><a href="index.html">HOME</a></li>
-
-     </ul>
-    
+<ul class="bottommenu">
+    <li><a href="Contact.html">CONTACT</a></li>
+    <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
+    <li><a class="active" href="Community.html">COMMUNITY</a></li>
+    <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
+    <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
+    <li><a href="index.html">HOME</a></li>
+</ul>
+</body>
 </html>

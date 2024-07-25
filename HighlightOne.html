@@ -43,7 +43,14 @@
             transform: translate(-50%, -50%);
             z-index: -1;
         }
-
+        .highlight-item .rectangle img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        
+           
+        }
         .highlight-item a{
             width: 260px;
             height: 260px;
@@ -105,6 +112,12 @@
             margin-right: auto;
         }
 
+        .date {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
+        }
     </style>
 
 
@@ -129,7 +142,7 @@
 
 
 
-            <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
+            <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
 
             <li><a href="index.html">HOME</a></li>
 
@@ -138,18 +151,42 @@
      </ul>
     </header>
      <div class="highlight-item">
-        <div class="rectangle"></div>
-        <a class="headshot" href="HighlightOne.html">  <img class="headshot" src="img/sowmya-headshot.png" width="260" alt="Highlight 1"> </a> 
+        <div class="rectangle">
+             <img src="img/Jason_action.jpg" alt="Jason in action">
+        </div>
+        <a class="headshot" href="HighlightOne.html">  <img class="headshot" src="img/Jason.png" width="260" alt="Highlight 1"> </a> 
      </div>
 <body>
-    <h5>Month Day, Year</h5>
-    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
-    <h4 class="blue">INTERVIEWEE: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse  faucibus in. Est velit egestas dui id </p></h4>
-    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id</p></h4>
-    <h4 class="blue">INTERVIEWEE: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
-    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
-    <h4 class="blue">INTERVIEWEE: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
-    <h4 class="interview">INTERVIEWER: <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p></h4>
+    <h4 class="date">DATE: <p><strong>June 26th, 2024</strong></p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What do you do for work? </p></h4>
+    <h4 class="blue">JASON: <p>I'm a UX engineer, which is a weird specialized field for front-end engineering and design. So it's kind of a cross-section of the two. I do strategy for how our users engage with our interfaces, whether that be graphical, terminals, or APIs. And then I also code out those experiences as well. So it's not just doing research, Figma work, or design work, but I also code out web applications, native applications, and things like that.
+</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What was your path to ESnet like?</p></h4>
+    <h4 class="blue">JASON: <p>So I've been in the industry for about 15 years now. Before ESnet, I worked at a couple of different companies. I led the UX engineering group at the Walt Disney Company for about 8 years. I worked on experiences like Marvel.com, Disney Plus, and ESPN. Prior to that, I  really honed my craft working at different ad agencies. So hopping around doing interactive work for, Activision Blizzard, Carl's Junior, and Sony. But I actually started my career in medical software in higher education. I worked for a university in Philadelphia called LaSalle University. I did all their web design and all their web development. That's largely the path here.
+</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>Did you go to college, and if so what did you study?</p></h4>
+        <h4 class="blue">JASON: <p> I went my undergrad degree is in digital arts and multimedia design, which a bunch of schools call a different thing. It's basically the cross-section of graphic design and some interactive coding. I went into it with the intent of focusing more on graphic design. But the more I got into it, the more I liked implementing my designs and code. Slowly before I knew it, I was coding more than I was designing. Then, I went back for a master's degree in computer science, which really solidified that hybrid role for me.</p></h4> 
+    <h4 class="interview">INTERVIEWER: <p>So what kind of softwares do you use mainly in your line of work?</p></h4>
+        <h4 class="blue">JASON: <p>I bounce back and forth between a couple different things. These days, I do almost all my design work in Figma.Over the years, it's been another applications like sketch or whatever the Adobe Suite was calling it at that time. But right now it's mainly Figma. As far as for coding, I use Visual Studio for all my web app development. I have to use Xcode for anything Apple related and then Android Studio if I'm doing anything with Android.
+    </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>When you are designing do you have a lot of creative freedom?</p></h4>
+        <h4 class="blue">JASON: <p>It depends. So if you're working with a big brand like Disney, you're usually limited by how they want their brand to be expressed. It has to use very specific branding or fonts or there's maybe a design system that already exists, which is like a scalable architecture approach to how your UI components are built. Because Disney's value is its brand, like "Oh, this was made by Disney so I want to make sure everyone knows that it's a Disney product". Whereas if I work with something like a smaller startup, there's a lot more freedom. 
+    </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>Can you tell us a little bit about the research and interview process?</p></h4>
+        <h4 class="blue">JASON: <p>
+            Sure, ESnet is easier because most users are internal. We identify the primary users and invite them for interviews. Interviews can involve reviewing the code base to discuss likes and dislikes, or they can be unmoderated where we observe them using the application in real-time via screen sharing. We note any friction points, such as excessive clicks, to streamline or automate workflows. It's fascinating because everyone interacts with computers differently.
+    </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What programming languages do you use?</p></h4>
+        <h4 class="blue">JASON: <p>
+            It depends on what I'm building. At ESnet, most front ends use JavaScript with the React framework, sometimes TypeScript with React. In the past, I used Swift for iOS and tvOS, and for Android, I started with Java but now prefer Kotlin—it's a really nice and fun language to work with.
+    </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What is an obstacle you have faced?</p></h4>
+        <h4 class="blue">JASON: <p>The biggest challenge I've encountered in my career is timing. Often, companies rush to release apps without dedicating enough time upfront for UX research and prototyping. This rush can lead to poor user experiences and negative perceptions of the app. Convincing companies to invest time in proper research and validation always results in a better user experience. Another challenge is the diversity in how users interact with devices. For example, when developing for Android, there's a wide range of devices—from budget models to high-end machines. Each user interacts differently with the application based on their device, which adds complexity to development.
+    </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What is the biggest piece of advice you have for people wanting to enter this field?</p></h4>
+        <h4 class="blue">JASON: <p>
+            Oh, tech is a rapidly evolving industry. You're always learning something new. Get comfortable with the fact that you don't know everything and there's always something new coming out. Set aside time to learn as it emerges. When I started, everyone was into flash websites, but that's outdated now. Similarly, in Android, Java dominated until Kotlin took over. Embrace learning—it's enjoyable to play with new technologies. That's my big recommendation: always be learning.
+    </p> <br><br>  <i>These interviews have been edited for clarity.</i></h4>
 </body>
 
 
@@ -168,7 +205,7 @@
 
         <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
-        <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
+        <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
 
         <li><a href="index.html">HOME</a></li>
 

@@ -42,10 +42,16 @@
             transform: translate(-50%, -50%);
             z-index: -1;
         }
+        .highlight-item .rectangle img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        }
 
         .highlight-item a{
             width: 260px;
-            height: 269px;
+            height: 260px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 10px;
@@ -53,38 +59,72 @@
             z-index: 1;
             border: 40px solid white;
         }
-        .shifted {
-            position: relative;
-            left: 1300px;
-        }
-        .interviewer {
-            color: #FF4E00;
-        }
-        .interviewee {
-            color: #003A5D; 
-        }
-        .fixed-width {
-            position: relative;
-            left: 400px;
-            max-width:1000px; 
-            font-size: 25px;
-        }
-       .backarrow {
-           width: 50px;
-       }
 
-        p{
-            font-size: 20px;
+        .headshot {
+            border-radius: 50%;
         }
+
+        h4 p{
+            display: inline;
+            color: black;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        h5{
+            display: relative;
+            font-family: "Spline Sans", sans-serif;
+            margin-left: 85%;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        h4{
+            font-family: "Spline Sans", sans-serif;
+            color: #FF4E00;
+            text-align: left;
+            max-width: 1050px;
+            margin-left: 20%;
+            font-size: 19px;
+
+        }
+
+        .blue {
+            color: #003A5D;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu{
+            margin-top: -12%;
+        }
+
+        .bottommenu{
+            margin-top: 1%;
+            font-size: 15px;
+        }
+
+        .interview {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .date {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
+        }
+
     </style>
 
-<!--Back button--> 
-     <a href="CareerHighlights.html">  <img class= "backarrow" src="img/back arrow.webp" alt="Go back" </a> 
 
 
 <!-- NAVIGATION -->
     <header>
-        <img src="img/EsNetLogo.png" width="400" class="logo">
+        <img src="img/EsNetLogo.png" width="400px" class="logo">
 
     <ul class="menu">
             <li><a class="active" href="Community.html">COMMUNITY</a></li>
@@ -102,35 +142,42 @@
 
 
 
-            <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
+            <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
 
             <li><a href="index.html">HOME</a></li>
 
         <hr id="navLine">
 
-     </ul> 
+     </ul>
     </header>
-
      <div class="highlight-item">
-        <div class="rectangle"></div>
-        <a class="headshot" href="HighlightOne.html">  <img  src="img/highlight1" alt="Highlight 1"> </a> 
+        <div class="rectangle">
+              <img src="img/cody_action.jpg" alt="Cody in action">
+        </div>
+        <a class="headshot" href="HighlightOne.html">  <img class="headshot" src="img/cody-headshot.png" width="260" alt="Highlight 1"> </a> 
      </div>
+<body>
+    <h4 class="date">DATE: <p><strong>July 1st, 2024</strong></p></h4>
+    <h4 class="interview">INTERVIEWER: <p>Can you tell us a little bit about what you do?</p></h4>
+    <h4 class="blue">CODY: <p>I'm a network engineer in the network services group at ESnet. My main focus is the Site Solutions team, where I design connectivity solutions for  ESnet end users. . My secondary assignment involves peering and transit, an area where I have significant gaps in knowledge. I make it a point to dedicate time to learning about global peering and transit relationships through direct exposure to help fill in those gaps. I also have a background in facilities and operations, most recently through my involvement in the ESnet6 facilities built over the past 7 years. That facilities background helps me to provide advice and assistance to our Data and Facilities Team when needed.
+</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What was your path to ESnet like?</p></h4>
+    <h4 class="blue">CODY: <p>I came from a nontraditional background. Growing up, I struggled with math, particularly basic arithmetic like times tables. I leaned more towards fine arts, focusing on writing and eventually theater in high school and college. Through high school, , I didn't have much access to computers or the internet, but I was always fixing electronics for my family and was very curious about computers and technology in general. After High School when I was living in Berkeley, I'd sneak up to Grizzly Peak to watch the fog roll in over the bay, dreaming of working for the lab and DOE, but I didn't have a technical background. I wasn't a computer person and math wasn't my strong suit, so it really seemed impossible for me to ever get to work at LBL. Later when my wife-to-be and I moved in together, she had a computer that I accidentally broke while fiddling around with it. She needed it for school and gaming, so I had to learn to repair it pretty quickly!  After that I assembled my first PC, a Pentium 120, and things kind of snowballed from there. I started working for an internet service provider (MegaPath) in 2000, and was able to use that experience to get more and more exposure to network engineering, eventually becoming the manager of my department. In 2010, one of the leads on my team at MegaPath had taken a job at a place called NERSC (the DOE National Energy Research Scientific Computing center), and he asked me to come visit him at his new job. While I was there I learned that NERSC was part of LBL. I toured NERSC's computer room floor and met my former coworkers boss, leading to a call for a second interview.  I didn’t even know that I was interviewing for a new job, I just thought I was taking a tour!  I decided to go for it, as the commute from Pleasant Hill to Oakland made sense with BART, and I realized this would be a way to realize my dream of working for LBL. I started at NERSC in the NOC, where we managed  the supercomputers and ESnet network operations. My experience at Megapath helped with the network side, so I started focusing on the supercomputing systems since I had no experience there and really wanted to learn. But I realized that I enjoyed the network side the most, and got to know the folks at ESnet very well. Eventually a position opened up at ESnet, and I got the job! I transferred from NERSC as a NOC technician to a network engineer at ESnet, becoming a Computing System Engineer without an engineering degree! It's crazy because I sometimes feel like I shouldn't be here, but it's where I wanted to be all along, and It's been a great fit for 14 years. That's my path.
 
-    <!--date-->
-    <p class="shifted"> Month Day, Year</p>
-    <br>
-    <!--main transcription--> 
+ </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What is your favorite part about the work that you do?</p></h4>
+    <h4 class="blue">CODY: <p>My favorite part of work is problem solving. I love troubleshooting and I love fixing things. I'm not a fan of doing the same thing repetitively over and over, so I love to figure out ways to optimize the work and simplify it so that it’s not really the “work” anymore. Then we can focus on the harder problems or the more interesting puzzles!   I also really enjoy learning new technology and processes,  getting them off and running “in production”, and then moving on to the next new process after we’ve transitioned everything to Operations. I'm really lucky because that's what I'm doing right now at ESnet.
+</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What has been your favorite project that you have worked on?</p></h4>
+     <h4 class="blue">CODY: <p>A project that I'm really proud of is working on the technology called dynamic acoustic sensing, DAS is the acronym, and it's using fiber optic cables to detect earthquakes or seismological activity. The geosciences group asked ESnet to come up with some fiber for one of their experiments in the Imperial Valley near the Salton Sea. I was able to find a fiber run that was broken which was perfect for this DAS sensing experiment, negotiating with the fiber providers and designing a footprint with the scientists on the experiment. . They were able to use this abandoned fiber in the ground to prove that this DAS technology is viable and it has been very useful. Some of that research helped to discover some of the lithium deposits in that area , which will help with American energy independence and technology manufacturing.
+    </p></h4>
+        <h4 class="interview">INTERVIEWER: <p>What piece of advice would you give someone pursuing the same field?</p></h4>
+     <h4 class="blue">CODY: <p>Be super curious, try everything and don't turn any work down. If there's a new thing that someone wants you to learn, especially when you're starting out, give it a shot, you don't have to do it forever. I never thought I would have worked in an ISP, or would have gotten a job at at DOE laboratory, since I felt like my math problems would get in the way, which they do sometimes, but I was able to work around it and make sure that I took advantage of the opportunities that came my way. Now as I've gotten older, I’ve learned some tips and tricks like taking good notes, using a calculator instead of getting flustered trying to do math in my head, and not being afraid to ask others  to double check my work. Just be curious and just try everything, and don't get too hung up on what you think your path is going to be because sometimes things go a different direction than what you had planned. 
+    </p> <br><br>  <i>These interviews have been edited for clarity.</i></h4>
+</body>
 
-    <div class = "fixed-width">
-    <p><span class= "interviewer"> <strong>INTERVIEWER:</strong> </span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p> 
-    <p><span class= "interviewee"><strong>INTERVIEWEE:</strong></span> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p>
-        <p><span class= "interviewer"> <strong>INTERVIEWER:</strong> </span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p> 
-        <p><span class= "interviewee"><strong>INTERVIEWEE:</strong></span> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p>
-        <p><span class= "interviewer"> <strong>INTERVIEWER:</strong> </span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p> 
-        <p><span class= "interviewee"><strong>INTERVIEWEE:</strong></span> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis. Enim lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id </p>
-          <p><span class= "interviewer"> <strong>INTERVIEWER:</strong> </span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p> 
-    </div>
 
+<!--bottom-->
 <hr style="height: 1px; background-color: black;">
 <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
 <img src="img/DOElogo.png" width="400px" style="padding: 50px;">
@@ -139,13 +186,13 @@
 
          <li><a href="Contact.html">CONTACT</a></li>
 
-       <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
+         <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
 
-        <li><a href="Community.html">COMMUNITY</a></li>
+        <li><a class="active" href="Community.html">COMMUNITY</a></li>
 
         <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
-        <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
+        <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
 
         <li><a href="index.html">HOME</a></li>
 

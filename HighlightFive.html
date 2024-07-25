@@ -42,6 +42,12 @@
             transform: translate(-50%, -50%);
             z-index: -1;
         }
+        .highlight-item .rectangle img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        }
 
         .highlight-item a{
             width: 260px;
@@ -52,6 +58,64 @@
             background-color: grey;
             z-index: 1;
             border: 40px solid white;
+        }
+
+        .headshot {
+            border-radius: 50%;
+        }
+
+        h4 p{
+            display: inline;
+            color: black;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        h5{
+            display: relative;
+            font-family: "Spline Sans", sans-serif;
+            margin-left: 85%;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        h4{
+            font-family: "Spline Sans", sans-serif;
+            color: #FF4E00;
+            text-align: left;
+            max-width: 1050px;
+            margin-left: 20%;
+            font-size: 19px;
+
+        }
+
+        .blue {
+            color: #003A5D;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu{
+            margin-top: -12%;
+        }
+
+        .bottommenu{
+            margin-top: 1%;
+            font-size: 15px;
+        }
+
+        .interview {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .date {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
         }
 
     </style>
@@ -78,7 +142,7 @@
 
 
 
-            <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
+            <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
 
             <li><a href="index.html">HOME</a></li>
 
@@ -87,10 +151,38 @@
      </ul>
     </header>
      <div class="highlight-item">
-        <div class="rectangle"></div>
-        <a class="headshot" href="HighlightOne.html">  <img  src="img/highlight1.jpg" alt="Highlight 1"> </a> 
+        <div class="rectangle">
+              <img src="img/Goran_action.png" alt="Goran in action">
+        </div>
+        <a class="headshot" href="HighlightOne.html">  <img class="headshot" src="img/Goran.jpg" width="260" alt="Highlight 1"> </a> 
      </div>
+<body>
+    <h4 class="date">DATE: <p><strong>July 11th, 2024</strong></p></h4>
+    <h4 class="interview">INTERVIEWER: <p>Can you tell us a little bit about what you do?</p></h4>
+    <h4 class="blue">GORAN: <p>I'm a computer systems engineer at ESnet. What my team and I do is maintain the data centers, the servers that live in that data center, and then the services that run on those servers. All this is in support of ESnet engineers and some external collaborators. Running these systems and data centers helps us run the network more efficiently.
 
+</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What was your path to ESnet like?</p></h4>
+    <h4 class="blue">GORAN: <p>I graduated from the IT University in Montenegro, Europe in 2011. I was doing freelance work while I was in college, building WordPress websites. Right after graduation, I started working in a small start-up that used to be a web development company and a photography studio. In parallel, I worked in another NGO that used to be an IT consulting company. They were consulting other companies on how to implement a network and some security features for their offices. When I moved here in 2015, I was looking to go somewhere in the West, preferably West Europe, but then I came to the Bay Area to visit some relatives, and I loved the people here. When I was looking for places to work here, I found Berkeley Lab and I've heard about it before because they're a world-known lab with Nobel prizes and all the amazing research that's happening here. So I found the lab and then I applied for the security position, and I did not end up getting that position at all. Then a couple of months after that, ESnet contacted me and they were like, “Hey, we have this other opening for a systems engineer position. Are you interested?” and I'm like, yep. So they flew me in from Europe for literally 2 days here in Berkeley. I had an interview, and the interview was pretty chill. I've been here since then, so it's now been 9 years, and mostly because I like the people at ESnet.
+
+ </p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What is your favorite part about the work that you do?</p></h4>
+    <h4 class="blue">GORAN: <p>My favorite part is automating my job. The goal is to automate myself out of the job. So I have a bunch of tasks that I do day to day, and the thing that I love the most is if I can automate it. Then instead of sitting and typing for an hour to fix something, I automated it so I could push a button, and then it could fix itself.</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What's the most interesting part of your work?</p></h4>
+     <h4 class="blue">GORAN: <p>I would say running the very high-speed, high-performance systems that we have here. The servers can run 200 gigabits, per network. That's something that I would never do if I wasn't here, like if I was working for a smaller company or especially if I was playing in my home lab.
+    </p></h4>
+        <h4 class="interview">INTERVIEWER: <p>What piece of advice would you give someone pursuing the same career?</p></h4>
+     <h4 class="blue">GORAN: <p>In this industry, things move pretty quickly and if you get too comfortable in your position, it can get old and you may fall out of it. So never stop learning is my advice.</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>What challenges do you face?</p></h4>
+    <h4 class="blue">GORAN: <p>The challenge in this role is that there's a ton of new technologies that come out every day. The challenge is when you see a new technology, the easier it looks for the user, the more complex it is under the hood, and it can be challenging to think, “Oh my god, this is too complex. I'm never gonna get it”. That happened to me in the beginning and then it still happens today, and I think it's gonna continue happening.</p></h4>
+    <h4 class="interview">INTERVIEWER: <p>Does your job require constant learning? If so, is it stressful?</p></h4>
+    <h4 class="blue">GORAN: <p>It does require constant learning, especially because things change in this industry a lot, but I don't feel pressure and I owe that again to the people I work with. Everybody's pretty understanding here. There is some pressure to do this at a specific deadline. However, things tend to be more relaxed and my boss understands if I need a little more time to understand something. Everybody's happy to share the knowledge so that really helps. So no pressure, but definitely, you gotta learn new stuff if you wanna stay on top. 
+</p> <br><br>  <i>These interviews have been edited for clarity.</i></h4>
+   
+</body>
+
+
+<!--bottom-->
 <hr style="height: 1px; background-color: black;">
 <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
 <img src="img/DOElogo.png" width="400px" style="padding: 50px;">
@@ -105,7 +197,7 @@
 
         <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
-        <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
+        <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
 
         <li><a href="index.html">HOME</a></li>
 

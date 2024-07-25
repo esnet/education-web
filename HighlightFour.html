@@ -42,6 +42,12 @@
             transform: translate(-50%, -50%);
             z-index: -1;
         }
+        .highlight-item .rectangle img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center bottom;
+        }
 
         .highlight-item a{
             width: 260px;
@@ -52,6 +58,64 @@
             background-color: grey;
             z-index: 1;
             border: 40px solid white;
+        }
+
+        .headshot {
+            border-radius: 50%;
+        }
+
+        h4 p{
+            display: inline;
+            color: black;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        h5{
+            display: relative;
+            font-family: "Spline Sans", sans-serif;
+            margin-left: 85%;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        h4{
+            font-family: "Spline Sans", sans-serif;
+            color: #FF4E00;
+            text-align: left;
+            max-width: 1050px;
+            margin-left: 20%;
+            font-size: 19px;
+
+        }
+
+        .blue {
+            color: #003A5D;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu{
+            margin-top: -12%;
+        }
+
+        .bottommenu{
+            margin-top: 1%;
+            font-size: 15px;
+        }
+
+        .interview {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .date {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
         }
 
     </style>
@@ -78,7 +142,7 @@
 
 
 
-            <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
+            <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
 
             <li><a href="index.html">HOME</a></li>
 
@@ -87,28 +151,54 @@
      </ul>
     </header>
      <div class="highlight-item">
-        <div class="rectangle"></div>
-        <a class="headshot" href="HighlightOne.html">  <img  src="img/highlight1.jpg" alt="Highlight 1"> </a> 
+        <div class="rectangle">
+              <img src="img/romainAction.jpg" alt="Romain in action">
+        </div>
+        <a class="headshot" href="HighlightOne.html">  <img class="headshot" src="img/defaultUser.png" width="260" alt="Highlight 1"> </a> 
      </div>
+ <body>
+     <h4 class="date">DATE: <p><strong>July 10th, 2024</strong></p></h4>
+     <h4 class="interview">INTERVIEWER: <p>Can you tell us a little bit about what you do?</p></h4>
+     <h4 class="blue">ROMAIN: <p>I'm a community threat hunter, which means I'm trying to identify attackers that would be prone to attack or compromise ESnet resources, people or partners, and try to defend against these attackers. There is the prevention aspect to prevent attacks and also the response aspect where I need to investigate crimes, follow clues, and try to discover what they did.
+</p></h4>
+     <h4 class="interview">INTERVIEWER: <p>How did you get to ESnet? What was your path? </p></h4>
+     <h4 class="blue">ROMAIN: <p>I've done a similar job in Europe for 17 years, and I just had the opportunity to join ESnet. I'm still a rookie here, but I'm a seasoned investigator. I've investigated crimes for more than 20 years in Europe and other places. That ranges from opportunistic violence related crimes to insider attacks trying to get an employee fired to take their slots. There's a wide range of things that people in my field have to deal with.
+ </p></h4>
+     <h4 class="interview">INTERVIEWER: <p>What's your favorite part about your job?</p></h4>
+     <h4 class="blue">ROMAIN: <p>For me, it's investigations and forensics. You have a digital crime scene that can be a compromised computer, laptop, a USB stick or something, and you have to figure out what happened on it. But you have to reconstruct the timeline and actions and tie it possibly to the person, to try and discover what actions were taken and then draw conclusions. 
+</p></h4>
+     <h4 class="interview">INTERVIEWER: <p>Do you have a piece of advice you would give someone who wants to pursue the same career?</p></h4>
+          <h4 class="blue">ROMAIN: <p>I would say just be curious. If you're curious, and if you don't like unsolved puzzles, this is a really good career path.
 
-<hr style="height: 1px; background-color: black;">
-<img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
-<img src="img/DOElogo.png" width="400px" style="padding: 50px;">
+     </p></h4><h4 class="interview">INTERVIEWER: <p>What's the most interesting thing that has happened to you while working as a security engineer? </p></h4>
+          <h4 class="blue">ROMAIN: <p>There is not one thing, I mean there are many cool investigations I was a part of, and it's always in the details. You work on the case for three months, and after three months, you discover a clue that you didn't have, and suddenly, everything changes in this Eureka moment where you figure out all the pieces, and your puzzle is now complete, which is really cool. This is not an overall career thing, but I would say that it'd be the people because I got to meet many people from all around the world, where we are fighting common adversaries and sharing. Learning from them and seeing what they could teach you, the way they were thinking, is the most enriching and empowering experience of my job. You keep learning from new people all the time.</p></h4> 
+     <h4 class="interview">INTERVIEWER: <p>What are some obstacles that you actually face in your career that you overcame and you feel proud of?</p></h4>
+          <h4 class="blue">ROMAIN: <p>The main problem that we always have to address is that the type of crime we investigate is digital, so they are cross border. They start in, let's say a country in Europe that spread to five other countries in Europe. They move to Asia, and then they end up in the US or in Canada. So you always have a lot of people that need to work together from different countries, different cultures, different employers, different backgrounds, and the main challenge is really that you have to build trust within these people so they can share data, and you can now achieve a common goal. That's always very hard, but this is our strength as well. 
+     </p></h4>
+     <h4 class="interview">INTERVIEWER: <p>How long does it take to work a case?</p></h4>
+          <h4 class="blue">ROMAIN: <p>The time varies between, I would say, 5 minutes to 15 years. In some cases, you figured out everything immediately because it's very basic, but in other cases, the attacker can be very good and well funded, and they could be in a country where you cannot arrest them easily. In that case, it can last for many years.</p> <br><br>  <i>These interviews have been edited for clarity.</i></h4>
+ </body>
 
-<ul class="bottommenu">
 
-         <li><a href="Contact.html">CONTACT</a></li>
+ <!--bottom-->
+ <hr style="height: 1px; background-color: black;">
+ <img src="img/LBLlogo.png" width="400px" style="padding: 50px;">
+ <img src="img/DOElogo.png" width="400px" style="padding: 50px;">
 
-         <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
+ <ul class="bottommenu">
 
-        <li><a class="active" href="Community.html">COMMUNITY</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
 
-        <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
+          <li><a href="https://forms.gle/qLY8kAGqTz21LVDK7" target="_blank">MAILING LIST</a></li>
 
-        <li><a href="CareerHighlights.html">CAREER HIGHLIGHTS</a></li>
+         <li><a class="active" href="Community.html">COMMUNITY</a></li>
 
-        <li><a href="index.html">HOME</a></li>
+         <li><a href="Guidance.html">EDUCATIONAL RESOURCES</a></li>
 
- </ul>
+         <li><a href="CareerHighlights.html">CAREER SPOTLIGHTS</a></li>
 
-</html>
+         <li><a href="index.html">HOME</a></li>
+
+  </ul>
+
+ </html>
